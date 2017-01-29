@@ -24,7 +24,7 @@
     </div>
       
     <div class="form-group">
-       <label for="appSom" class="col-lg-2 control-label">Application SOM :</label>
+       <label for="appSomFullName" class="col-lg-2 control-label">Application SOM :</label>
       <div class="col-lg-4">
         <input class="form-control" id="appSomFirstName" placeholder="First Name" type="text">
      </div>
@@ -32,7 +32,20 @@
         <input class="form-control" id="appSomLastName" placeholder="Last Name" type="text">
      </div>
         
+        
     </div>
+      
+      <div class="form-group">
+       <label for="appSomContact" class="col-lg-2 control-label"></label>
+      <div class="col-lg-4">
+        <input class="form-control" id="appSomEmail" placeholder="E-Mail Address" type="email">
+     </div>
+        <div class="col-lg-4">
+        <input class="form-control" id="appSomPhoneNo" placeholder="Phone Number" type="text">
+     </div>
+        
+    </div>
+    
       
       <div class="form-group">
        <label for="appSme" class="col-lg-2 control-label">Application SME :</label>
@@ -42,11 +55,77 @@
           <div class="col-lg-4">
         <input class="form-control" id="appSmeLastName" placeholder="Last Name" type="text">
      </div>
+       
+    </div>
+      
+      
+      
+      
+      
+      <div class="form-group">
+          <label for="appSmeContact" class="col-lg-2 control-label"></label>
+      <div class="col-lg-4">
+        <input class="form-control" id="appSmeEmail" placeholder="Email Address" type="email">
+     </div>
+    <div class="col-lg-4">
+        <input class="form-control" id="appSmePhoneNo" placeholder="Phone Number" type="text">
+     </div>
           
     <div class="col-lg-2">
-<a class="btn btn-success" href="#" role="button"><span class="glyphicon glyphicon-plus">&nbsp;</span>Add More SME</a>
-     </div>   
+<a class="btn btn-success" data-target="#addMoreSme" role="button" data-toggle="modal"><span class="glyphicon glyphicon-plus">&nbsp;</span>Add More SME</a>
+     </div>
+              
+      <!-- Modal to add more SME -->
+      
+<div id="addMoreSme" class="modal">  <!-- Modal starts -->
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" aria-hidden="true" type="button" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">SME Details</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+    <div class="col-lg-6">
+        <input class="form-control" id="appSmeFirstName" placeholder="First Name" type="text">
+     </div>
+    <div class="col-lg-6">
+        <input class="form-control" id="appSmeLastName" placeholder="Last Name" type="text">
+     </div>
+          </div>
+          
+          <div class="row">
+    <div class="col-lg-6">
+        <input class="form-control" id="appSmeEmail" placeholder="Email Address" type="email">
+     </div>
+    <div class="col-lg-6">
+        <input class="form-control" id="appSmePhoneNo" placeholder="Phone Number" type="text">
+     </div>
+        
+          
+          </div>
+          
+          
+          
+          
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" type="button" data-dismiss="modal">Cancel</button>
+        <button class="btn btn-primary" type="button" data-dismiss="modal">ADD SME</button>
+      </div>
     </div>
+  </div>
+</div>   <!-- Modal ends -->
+      
+  
+         
+
+    </div>
+      
+      
+      
+      
+      
       
       
       
@@ -111,13 +190,7 @@
     </div>
       
       
-    
-  
-          
-      
-      
-  
-          
+        
          
       <div class="form-group-buttonsEnd">
       <div class="btn-group btn-group-justified">
@@ -125,6 +198,14 @@
         <button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-retweet">&nbsp;</span>Save & Continue</button>
       </div>
     </div>
+      
+      
+      
+      
+      
+      
+      
+      
       
       
       </fieldset>
