@@ -17,7 +17,7 @@
             
             <div class="form-group">
                 <label for="layerTypeOfLayer" class="col-lg-2 control-label">Type :</label>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <select class="form-control" id="layerTypeOfLayer">
                     <option>Business</option>
                     <option>IT</option>
@@ -27,7 +27,7 @@
             
              <div class="form-group">
                 <label for="layerSubTypeOfLayer" class="col-lg-2 control-label">Sub Type :</label>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <select class="form-control" id="layerSubTypeOfLayer">
                     <option>Application</option>
                     <option>Database</option>
@@ -37,7 +37,7 @@
             
             <div class="form-group">
                 <label for="layerModeOfTransfer" class="col-lg-2 control-label">Mode of Transfer :</label>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <select class="form-control" id="layerModeOfTransfer">
                     <option>File</option>
                     <option>Database View</option>
@@ -45,11 +45,19 @@
                 </div>
             </div>
             
-            
+                <div class="form-group">
+          <label class="col-lg-2 control-label" for="layerComments">Comments :</label>
+          <div class="col-lg-10">
+            <textarea class="form-control" id="layerComments" rows="3"></textarea>
+            <span class="help-block">Please enter remarks that are important.</span>
+          </div>
+        </div>
+  
                      
       <div class="form-group-buttonsEnd">
       <div class="btn-group btn-group-justified">
         <a href="#!/app/newApp" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-menu-left">&nbsp;</span>Back</a>
+        <a href="#" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus">&nbsp;</span>Add More</a>
         <a href="#!/database/newDatabase" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-retweet">&nbsp;</span>Save & Continue</a>
       </div>
     </div>
