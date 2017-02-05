@@ -8,10 +8,15 @@
  * Controller of the aobappApp
  */
 angular.module('aobappApp')
-  .controller('newAppCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('newAppCtrl', function($scope) {
+    
+    
+    $scope.cars = {
+        Low : "Low",
+        Medium : "Medium",
+        High : "High"
+    };
+    
+    
+    
   });

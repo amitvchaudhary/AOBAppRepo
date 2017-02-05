@@ -10,26 +10,26 @@
     <div class="form-group">
       <label for="appId" class="col-lg-2 control-label">Application ID :</label>
       <div class="col-lg-2">
-        <input class="form-control" id="appId" placeholder="e.g. LH-001" type="text">
+        <input class="form-control" id="appId" placeholder="e.g. LH-001" type="text" ng-model="appId">
       </div>
-        
+        {{appId}}
       
     </div>
       
     <div class="form-group">
        <label for="appName" class="col-lg-2 control-label">Application Name :</label>
       <div class="col-lg-8">
-        <input class="form-control" id="appName" placeholder="e.g. IdentityIQ" type="text">
+        <input class="form-control" id="appName" placeholder="e.g. IdentityIQ" type="text" ng-model="appName">
      </div>
     </div>
       
     <div class="form-group">
        <label for="appSomFullName" class="col-lg-2 control-label">Application SOM :</label>
       <div class="col-lg-4">
-        <input class="form-control" id="appSomFirstName" placeholder="First Name" type="text">
+        <input class="form-control" id="appSomFirstName" placeholder="First Name" type="text" ng-model="appSomFirstName">
      </div>
         <div class="col-lg-4">
-        <input class="form-control" id="appSomLastName" placeholder="Last Name" type="text">
+        <input class="form-control" id="appSomLastName" placeholder="Last Name" type="text" ng-model="appSomLastName">
      </div>
         
         
@@ -38,10 +38,10 @@
       <div class="form-group">
        <label for="appSomContact" class="col-lg-2 control-label"></label>
       <div class="col-lg-4">
-        <input class="form-control" id="appSomEmail" placeholder="E-Mail Address" type="email">
+        <input class="form-control" id="appSomEmail" placeholder="E-Mail Address" type="email" ng-model="appSomEmail">
      </div>
         <div class="col-lg-4">
-        <input class="form-control" id="appSomPhoneNo" placeholder="Phone Number" type="text">
+        <input class="form-control" id="appSomPhoneNo" placeholder="Phone Number" type="text" ng-model="appSomPhoneNo">
      </div>
         
     </div>
@@ -50,10 +50,10 @@
       <div class="form-group">
        <label for="appSme" class="col-lg-2 control-label">Application SME :</label>
       <div class="col-lg-4">
-        <input class="form-control" id="appSmeFirstName" placeholder="First Name" type="text">
+        <input class="form-control" id="appSmeFirstName" placeholder="First Name" type="text" ng-model="appSmeFirstName">
      </div>
           <div class="col-lg-4">
-        <input class="form-control" id="appSmeLastName" placeholder="Last Name" type="text">
+        <input class="form-control" id="appSmeLastName" placeholder="Last Name" type="text" ng-model="appSmeLastName">
      </div>
        
     </div>
@@ -65,10 +65,10 @@
       <div class="form-group">
           <label for="appSmeContact" class="col-lg-2 control-label"></label>
       <div class="col-lg-4">
-        <input class="form-control" id="appSmeEmail" placeholder="Email Address" type="email">
+        <input class="form-control" id="appSmeEmail" placeholder="Email Address" type="email" ng-model="appSmeEmail">
      </div>
     <div class="col-lg-4">
-        <input class="form-control" id="appSmePhoneNo" placeholder="Phone Number" type="text">
+        <input class="form-control" id="appSmePhoneNo" placeholder="Phone Number" type="text" ng-model="appSmePhoneNo">
      </div>
           
     <div class="col-lg-2">
@@ -87,19 +87,19 @@
       <div class="modal-body">
         <div class="row">
     <div class="col-lg-6">
-        <input class="form-control" id="appSmeFirstName" placeholder="First Name" type="text">
+        <input class="form-control" id="appSmeFirstName" placeholder="First Name" type="text" ng-model="appSmeFirstName">
      </div>
     <div class="col-lg-6">
-        <input class="form-control" id="appSmeLastName" placeholder="Last Name" type="text">
+        <input class="form-control" id="appSmeLastName" placeholder="Last Name" type="text" ng-model="appSmeLastName">
      </div>
           </div>
           
           <div class="row">
     <div class="col-lg-6">
-        <input class="form-control" id="appSmeEmail" placeholder="Email Address" type="email">
+        <input class="form-control" id="appSmeEmail" placeholder="Email Address" type="email" ng-model="appSmeEmail">
      </div>
     <div class="col-lg-6">
-        <input class="form-control" id="appSmePhoneNo" placeholder="Phone Number" type="text">
+        <input class="form-control" id="appSmePhoneNo" placeholder="Phone Number" type="text" ng-model="appSmePhoneNo">
      </div>
         
           
@@ -134,44 +134,44 @@
       <div class="col-lg-10">
         <div class="radio">
           <label>
-            <input name="partOf" id="partOfBau" value="partOfBau" checked="" type="radio">
+            <input name="partOf" id="partOfBau" value="BAU" ng-checked="true" type="radio" ng-model="partOf">
             Business As Usual (BAU)
           </label>
         </div>
         <div class="radio">
           <label>
-            <input name="partOf" id="partOfProject" value="partOfProject" type="radio">
+            <input name="partOf" id="partOfProject" value="Project" type="radio" ng-model="partOf">
             Project
           </label>
         </div>
       </div>
     </div>
       
-      
+    
     <div class="form-group">
       <label class="col-lg-2 control-label">Type :</label>
       <div class="col-lg-10">
         <div class="radio">
           <label>
-            <input name="type" id="typeSox" value="typeSox" checked="" type="radio">
+            <input name="type" id="typeSox" value="SOX" ng-checked="true" type="radio" ng-model="type">
             SOX Compliant
           </label>
         </div>
         <div class="radio">
           <label>
-            <input name="type" id="typeNonSox" value="typeNonSox" type="radio">
+            <input name="type" id="typeNonSox" value="NonSOX" type="radio" ng-model="type">
             Non-SOX Compliant
           </label>
         </div>
       </div>
     </div>
       
-     
+     {{type}}
       
        <div class="form-group">
       <label for="releaseTarget" class="col-lg-2 control-label">Release Target :</label>
       <div class="col-lg-4">
-        <input class="form-control" id="releaseTarget" type="date">
+        <input class="form-control" id="releaseTarget" type="date" ng-model="releaseTarget">
       </div>
     
         </div>
@@ -179,17 +179,14 @@
       <div class="form-group">
       <label class="col-lg-2 control-label" for="select">Priority : </label>
       <div class="col-lg-4">
-        <select class="form-control" id="select">
-        <option>Low</option>
-        <option>Medium</option>
-        <option>High</option>
-         
+        <select class="form-control" id="select" ng-model="selectedPriority" ng-options="x for (x,y) in cars">
+               
         </select>
        
       </div>
     </div>
       
-      
+      {{selectedPriority}}
         
          
       <div class="form-group-buttonsEnd">
