@@ -21,22 +21,23 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/newApp', {
+      .when('/app/newApp', {
         templateUrl: 'views/newApp.html',
         controller: 'newAppCtrl',
         controllerAs: 'newApp'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
-      .when('/codeeasy', {
-        templateUrl: 'views/codeeasy.html',
-        controller: 'CodeeasyCtrl',
-        controllerAs: 'codeeasy'
-      })
-      .otherwise({
+    .when('/app/appLayers',{
+       templateUrl:'views/appLayers.html',
+        controller:'appLayersCtrl',
+        controllerAs:'appLayers'
+        })
+    
+    .when('/database/newDatabase',{
+        templateUrl:'views/newDatabase.html',
+        controller:'newDatabaseCtrl',
+        controllerAs:'newDatabase'
+    })
+     .otherwise({
         redirectTo: '/'
       });
   });

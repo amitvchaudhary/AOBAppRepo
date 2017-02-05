@@ -1,0 +1,264 @@
+<div class="panel panel-default">
+<div class="panel-heading">Database</div>
+    <div class="panel-body">
+        <form class="form-horizontal">
+        <fieldset>
+            <div class="form-group">
+                <label for="databaseAppId" class="col-lg-2 control-label">Application ID :</label>
+                <div class="col-lg-2">
+                    <select class="form-control" id="databaseAppId">
+                    <option>LH-001</option>
+                    <option>AR-001</option>
+                    <option>CV-002</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+             <div class="form-group">
+                <label for="databaseEnvironment" class="col-lg-2 control-label">Environment :</label>
+                <div class="col-lg-4">
+                   <select class="form-control" id="databaseEnvironment">
+                    <option>Development</option>
+                    <option>System Integration Testing (SIT)</option>
+                     <option>User Acceptance Testing (UAT)</option>
+                     <option>System Volume Performance (SVP)</option>
+                     <option>Production</option>
+                     <option>Disaster Recovery (DR)</option>
+                  </select>
+                </div>
+            </div>
+           
+            
+            
+            <div class="form-group">
+                <label for="databaseTypeOfLayer" class="col-lg-2 control-label">Type :</label>
+                <div class="col-lg-4">
+                    <select class="form-control" id="databaseTypeOfLayer">
+                    <option>Business</option>
+                    <option>IT</option>
+                    </select>
+                </div>
+          
+                <label for="databaseSubTypeOfLayer" class="col-lg-2 control-label">Sub Type :</label>
+                <div class="col-lg-4">
+                    <select class="form-control" id="databaseSubTypeOfLayer">
+                    <option>Application</option>
+                    <option>Database</option>
+                    </select>
+                </div>
+            </div>
+            
+         
+            
+            
+              <div class="form-group">
+                <label for="databaseDomain" class="col-lg-2 control-label">Domain :</label>
+                <div class="col-lg-4">
+                   <select class="form-control" id="databaseDomain">
+                    <option>Westpac</option>
+                    <option>BTFin</option>
+                     <option>St. George</option>
+                    <option>Not Known</option>
+                    </select>
+                </div>
+                  
+                  <label for="databaseSubDomain" class="col-lg-2 control-label">Sub Domain :</label>
+                <div class="col-lg-4">
+                   <select class="form-control" id="databaseSubDomain">
+                    <option>CORPAU</option>
+                    <option>CORE</option>
+                     <option>STAGE</option>
+                     <option>Not Known</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+            <div class="form-group">
+                <label for="databaseTypeOfDatabase" class="col-lg-2 control-label">Database :</label>
+                <div class="col-lg-4">
+                    <select class="form-control" id="databaseTypeOfDatabase">
+                    <option>Microsoft SQL</option>
+                    <option>Oracle</option>
+                    <option>Sybase</option>
+                    <option>DB2</option>
+                    </select>
+                </div>
+           
+                <label for="databaseTypeOfDatabase" class="col-lg-2 control-label">Database Version:</label>
+                <div class="col-lg-4">
+                    <select class="form-control" id="databaseTypeOfDatabase">
+                    <option>SQL 2005</option>
+                    <option>SQL 2008</option>
+                    <option>SQL 2012</option>
+                    <option>Oracle 12i</option>
+                    <option>Oracle 12g</option>
+                    <option>Oracle 12c</option>
+                    <option>Other</option>
+                    <option>Not Known</option>
+                    </select>
+                </div>
+            </div>
+         
+            
+            <div class="form-group">
+              <label class="col-lg-2 control-label">Listener/Cluster :</label>
+              <div class="col-lg-10">
+                <div class="radio">
+                  <label>
+                    <input name="isListenerCluster" id="yesListenerCluster" value="yesListenerCluster" checked="" type="radio">
+                    Yes
+                  </label>
+                
+                  <label>
+                    <input name="isListenerCluster" id="noListenerCluster" value="noListenerCluster" type="radio">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            <!------------------------ Listener/Cluster Details Start--------------------------- -->
+            
+            
+            <div class="form-group">
+                <label for="databaseListenerClusterInstance" class="col-lg-2 control-label">Listener Service/Instance :</label>
+                <div class="col-lg-4">
+                    <input class="form-control" id="databaseListenerClusterInstance" placeholder="e.g. PRIM" type="text">
+                </div>
+             </div>
+            
+             <div class="form-group">
+                <label for="databaseListenerClusterHostname" class="col-lg-2 control-label">Listener Hostname :</label>
+                <div class="col-lg-4">
+                    <input class="form-control" id="databaseListenerClusterHostname" placeholder="e.g. sql.westpac.com.au" type="text">
+                </div>
+           
+                <label for="databaseListenerClusterIP" class="col-lg-2 control-label">Listener IP:</label>
+                <div class="col-lg-4">
+                   <input class="form-control" id="databaseListenerClusterIP" placeholder="e.g. 10.10.132.192" type="text">
+                    </select>
+                </div>
+            </div>
+            
+            
+            
+             <div class="form-group">
+                <label for="databaseListenerClusterPort" class="col-lg-2 control-label">Listener Port :</label>
+                <div class="col-lg-4">
+                    <input class="form-control" id="databaseListenerClusterPort" placeholder="e.g. 61435" type="text">
+                </div>
+             
+              <label class="col-lg-2 control-label">SSL :</label>
+              <div class="col-lg-4">
+                <div class="radio">
+                  <label>
+                    <input name="databaseListenerClusterSSL" id="yesSSLListnerCluster" value="yesSSL" checked="" type="radio">
+                    Yes
+                  </label>
+                
+                  <label>
+                    <input name="databaseListenerClusterSSL" id="nonSSLListenerCluster" value="nonSSL" type="radio">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            
+            
+             <!------------------------ Listener/Cluster Details Ends--------------------------- -->
+            
+            
+            
+            
+             <div class="form-group">
+                <label for="databaseServiceInstance" class="col-lg-2 control-label">Database Service/Instance :</label>
+                <div class="col-lg-4">
+                    <input class="form-control" id="databaseServiceInstance" placeholder="e.g. PRIM" type="text">
+                </div>
+             </div>
+            
+             <div class="form-group">
+                <label for="databaseHostname" class="col-lg-2 control-label">Database Hostname :</label>
+                <div class="col-lg-4">
+                    <input class="form-control" id="databaseHostname" placeholder="e.g. sql.westpac.com.au" type="text">
+                </div>
+           
+                <label for="databaseIP" class="col-lg-2 control-label">Database IP:</label>
+                <div class="col-lg-4">
+                   <input class="form-control" id="databaseIP" placeholder="e.g. 10.10.132.192" type="text">
+                    </select>
+                </div>
+            </div>
+            
+            
+            
+             <div class="form-group">
+                <label for="databasePort" class="col-lg-2 control-label">Database Port :</label>
+                <div class="col-lg-4">
+                    <input class="form-control" id="databasePort" placeholder="e.g. 1435" type="text">
+                </div>
+             
+              <label class="col-lg-2 control-label">SSL :</label>
+              <div class="col-lg-4">
+                <div class="radio">
+                  <label>
+                    <input name="databaseSSL" id="yesSSL" value="yesSSL" checked="" type="radio">
+                    Yes
+                  </label>
+                
+                  <label>
+                    <input name="databaseSSL" id="nonSSL" value="nonSSL" type="radio">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            
+              <div class="form-group">
+                <label for="databaseSupportTeam" class="col-lg-2 control-label">Database Support Team :</label>
+                <div class="col-lg-4">
+                    <select class="form-control" id="databaseSupportTeam">
+                    <option>WBC SQL Support</option>
+                    <option>Oracle Support</option>
+                    <option>Other</option>
+                    <option>Not Known</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+            
+            
+    <div class="form-group">
+      <label class="col-lg-2 control-label" for="databaseComments">Comments :</label>
+      <div class="col-lg-10">
+        <textarea class="form-control" id="databaseComments" rows="3"></textarea>
+        <span class="help-block">Please enter remarks that are important.</span>
+      </div>
+    </div>
+  
+            
+            
+            
+            
+                  
+      <div class="form-group-buttonsEnd">
+      <div class="btn-group btn-group-justified">
+        <a href="#!/app/appLayers" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-menu-left">&nbsp;</span>Back</a>
+        <a href="#" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-plus">&nbsp;</span>Add More</a>
+        <button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-retweet">&nbsp;</span>Save & Continue</button>
+      </div>
+    </div>
+            
+        </fieldset>
+        </form>
+        </div>
+</div>
