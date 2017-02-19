@@ -64,4 +64,21 @@ body
 }
 
 
+.form-group.required .control-label:after {
+  content:" *";
+  color:red;
+}
+
+
+.requiredField
+{
+    color: red;
+}
+
+
+.text-Transform
+{
+    text-transform: uppercase;
+}
+
 
