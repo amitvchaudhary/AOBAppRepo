@@ -22,8 +22,10 @@ angular.module('aobappApp')
     };
     
     $scope.releases=['Jan17','Feb17','Mar17'];
-    
     $scope.selectedRelease=$scope.releases[0];
+    
+    $scope.isgConsultants=['Vinodini Govindraj','Robert Murace','Alex Linnik','Elke'];
+    $scope.selectedAppIsgConsultant=$scope.isgConsultants[0];
     
     
   });

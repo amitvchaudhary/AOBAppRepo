@@ -1,0 +1,49 @@
+<div class="panel panel-default">
+<div class="panel-heading">New Release</div>
+    <div class="panel-body">
+        
+<form name="newReleaseForm" class="form-horizontal" ng-submit="submitForm(newReleaseForm.$valid)" novalidate>
+  <fieldset>
+       <div class="form-group required" >
+       <label for="releaseName" class="col-lg-2 control-label">Release Name :</label>
+      <div class="col-lg-4" ng-class="{ 'has-error' : newReleaseForm.releaseName.$touched && newReleaseForm.releaseName.$invalid}">
+        <input class="form-control" name="releaseName" placeholder="e.g. Jan-17" type="text" ng-model="releaseName" required>
+           <span ng-show="newReleaseForm.releaseName.$touched && newReleaseForm.releaseName.$invalid">Please enter Release Name to proceed.</span>
+     </div>
+    </div>
+      
+       <div class="form-group required" >
+       <label for="releaseDate" class="col-lg-2 control-label">Release Date :</label>
+      <div class="col-lg-4" ng-class="{ 'has-error' : newReleaseForm.releaseDate.$touched && newReleaseForm.releaseDate.$invalid}">
+        <input class="form-control" name="releaseDate" type="date" ng-model="releaseDate" required>
+           <span ng-show="newReleaseForm.releaseDate.$touched && newReleaseForm.releaseDate.$invalid">Please enter Release Date to proceed.</span>
+     </div>
+    </div>
+      
+       <div class="form-group">
+      <label class="col-lg-2 control-label" for="select">Release Coordinator : </label>
+      <div class="col-lg-4">
+        <select class="form-control" name="selectedReleaseCoordinator" ng-model="selectedReleaseCoordinator" ng-options="x for x in releaseCoordinators">
+             
+        </select>
+         
+       </div>
+    </div>
+      
+      
+      <div class="form-group-buttonsEnd">
+      <div class="btn-group btn-group-justified">
+        <button type="reset" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-remove-circle">&nbsp;</span>Reset</button>
+          <button class="btn btn-primary btn-lg" ng-disabled="newReleaseForm.$invalid"><span class="glyphicon glyphicon-retweet">&nbsp;</span>Save & Continue</button>
+      </div>
+    </div>
+       
+    
+        
+      
+    
+    </fieldset>
+</form>
+        
+    </div>
+</div>

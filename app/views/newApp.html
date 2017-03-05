@@ -4,7 +4,7 @@
   <div class="panel-heading">New Application</div>
   <div class="panel-body">
     
-      <form name="newAppForm" class="form-horizontal" ng-submit="submitForm(newAppForm.$valid)" novalidate>
+<form name="newAppForm" class="form-horizontal" ng-submit="submitForm(newAppForm.$valid)" novalidate>
   <fieldset>
     
     <div class="form-group required" >
@@ -64,10 +64,6 @@
        
     </div>
       
-      
-      
-      
-      
       <div class="form-group">
           <label for="appSmeContact" class="col-lg-2 control-label"></label>
       <div class="col-lg-4" ng-class="{ 'has-error' : newAppForm.appSmeEmail.$touched && newAppForm.appSmeEmail.$invalid}">
@@ -81,6 +77,9 @@
     <div class="col-lg-2">
 <a class="btn btn-success" data-target="#addMoreSme" role="button" data-toggle="modal"><span class="glyphicon glyphicon-plus">&nbsp;</span>Add More SME</a>
      </div>
+          
+          
+          
               
       <!-- Modal to add more SME -->
       
@@ -126,19 +125,19 @@
     </div>
   </div>
 </div>   <!-- Modal ends -->
-      
-  
-         
-
     </div>
-      
-      
-      
-      
-      
-      
-      
-      
+       
+   
+        
+           
+       <div class="form-group">
+      <label for="selectedAppIsgConsultant" class="col-lg-2 control-label">App ISG Consultant :</label>
+      <div class="col-lg-4">                
+          <select class="form-control" name="selectedAppIsgConsultant" ng-model="selectedAppIsgConsultant" ng-options="x for x in isgConsultants">             
+        </select>       
+      </div>    
+        </div>
+          
     <div class="form-group">
       <label class="col-lg-2 control-label">Part of :</label>
       <div class="col-lg-10">
@@ -180,14 +179,10 @@
       
        <div class="form-group">
       <label for="releaseTarget" class="col-lg-2 control-label">Release Target :</label>
-      <div class="col-lg-4">
-                
-          <select class="form-control" name="selectedRelease" ng-model="selectedRelease" ng-options="x for x in releases">
-               
-        </select>
-       
-      </div>
-    
+      <div class="col-lg-4">                
+          <select class="form-control" name="selectedRelease" ng-model="selectedRelease" ng-options="x for x in releases">             
+        </select>       
+      </div>    
         </div>
       
       <div class="form-group">
@@ -200,8 +195,7 @@
       </div>
     </div>
       
-    
-        
+  
          
       <div class="form-group-buttonsEnd">
       <div class="btn-group btn-group-justified">
@@ -217,7 +211,7 @@
       
       
       
-      
+      </div>
       
       </fieldset>
 </form>

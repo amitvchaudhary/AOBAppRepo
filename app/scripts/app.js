@@ -25,18 +25,22 @@ angular
         templateUrl: 'views/newApp.html',
         controller: 'newAppCtrl',
         controllerAs: 'newApp'
-      })
+      })    
     .when('/app/appLayers',{
        templateUrl:'views/appLayers.html',
         controller:'appLayersCtrl',
         controllerAs:'appLayers'
-        })
-    
+        })    
     .when('/database/newDatabase',{
         templateUrl:'views/newDatabase.html',
         controller:'newDatabaseCtrl',
         controllerAs:'newDatabase'
-    })
+    })    
+    .when('/release/newRelease',{
+        templateUrl:'views/newRelease.html',
+         controller: 'newReleaseCtrl',
+        controllerAs: 'newRelease'
+    }) 
      .otherwise({
         redirectTo: '/'
       });
